@@ -50,8 +50,7 @@ const allUpperCase = (arr) => {
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 4
 
-Write a function named `greeting` that takes in a single string and returns the string in all uppercase letters,
- and followed by an "!".
+Write a function named `greeting` that takes in a single string and returns the string in all uppercase letters, and followed by an "!".
 
 Then, write a function named `speaker` that takes in an array of strings and a callback function. 
 
@@ -64,13 +63,13 @@ const greeting = (word) => {
   return greetingWord;
 };
 
+let newArr4=[];
 const speaker = (words, callback) => {
   // Solution code here...
-  let myArray=[];
-  words.forEach(words => {
-    myArray.push(callback(words))
-  });
- return myArray;
+  words.forEach(words =>{
+    newArr4.push(callback(words))
+  })
+  return newArr4 ;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -92,6 +91,7 @@ Return the modified array.
 const addValues = (arr, value) => {
   // Solution code here...
   arr.push(value);
+
 };
 
 const addNumbers = (num, arr, times, callback) => {
@@ -100,7 +100,6 @@ const addNumbers = (num, arr, times, callback) => {
     callback(arr,num);
   }
   return arr;
-  
 };
 
 /* ------------------------------------------------------------------------------------------------
