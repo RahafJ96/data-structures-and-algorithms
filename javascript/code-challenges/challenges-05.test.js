@@ -14,12 +14,10 @@ You can assume that neither firstName nor lastName will be blank
 const toLastNames = people => {
   // Solution code here...
   
- let array = people.map(element => {
-   return (`${element.firstName} ${element.lastName}`);
-
-
+ let arr1 = people.map(value => {
+   return (`${value.firstName} ${value.lastName}`);
   })
-  return array;
+  return arr1;
 };
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 2
